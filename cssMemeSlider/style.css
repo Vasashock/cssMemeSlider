@@ -66,23 +66,23 @@ li {
 h2 {
   font-weight: 300;
   animation: backwards;
-  font-size: 20px;
+  font-size: 1.25rem;
   webkit-animation: focus-in-contract-bck 1s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .active {
   background-color: rgb(37, 40, 42);
-  border: 2px solid #6c92c7;
+  border: 0.125rem solid #6c92c7;
 }
 .active:hover {
   background-color: rgb(37, 40, 42);
-  border: 2px solid #ffff;
+  border: 0.125rem solid #ffff;
 }
 li:hover .button-back.active {
   background-color: rgb(37, 40, 42);
   background-color: rgb(37, 40, 42);
-  border: 2px solid #ffff;
+  border: 0.125rem solid #ffff;
 }
 li:hover .button-back {
   background: #ffff;
@@ -100,23 +100,23 @@ li {
 h2 {
   font-weight: 300;
   animation: backwards;
-  font-size: 20px;
+  font-size: 1.25rem;
   webkit-animation: focus-in-contract-bck 1s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .active {
   background-color: rgb(37, 40, 42);
-  border: 2px solid #6c92c7;
+  border: 0.125rem solid #6c92c7;
 }
 .active:hover {
   background-color: rgb(37, 40, 42);
-  border: 2px solid #ffff;
+  border: 0.125rem solid #ffff;
 }
 li:hover .button-back.active {
   background-color: rgb(37, 40, 42);
   background-color: rgb(37, 40, 42);
-  border: 2px solid #ffff;
+  border: 0.125rem solid #ffff;
 }
 li:hover .button-back {
   background: #ffff;
@@ -125,15 +125,15 @@ li:hover .button-back {
 @-webkit-keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
+    -webkit-transform: translateZ(18.75rem);
+    transform: translateZ(18.75rem);
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(12px);
-    transform: translateZ(12px);
+    -webkit-transform: translateZ(0.75rem);
+    transform: translateZ(0.75rem);
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
@@ -142,15 +142,15 @@ li:hover .button-back {
 @keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-    transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
+    -webkit-transform: translateZ(18.75rem);
+    transform: translateZ(18.75rem);
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(12px);
-    transform: translateZ(12px);
+    -webkit-transform: translateZ(0.75rem);
+    transform: translateZ(0.75rem);
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
