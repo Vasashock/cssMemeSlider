@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
       sliderDots = document.querySelectorAll(".item-pagination");
     let sliderCount = 0,
       sliderWidth = document.querySelector(".container").offsetWidth;
-    console.log(sliderWidth);
   
     sliderDots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         let sliderWidth = document.querySelector(".image-abote").offsetWidth  + getSize("container") - getSize("image-abote", 'marginRight') + 23;
-        console.log(sliderWidth);
         sliderCount = index;
         rollSlider(sliderLine, sliderWidth, sliderCount);
         activeDot(sliderCount, pagination);
