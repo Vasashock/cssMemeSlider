@@ -1,0 +1,97 @@
+body{
+    background: #26282a;
+}
+.slider-line {
+  display: flex;
+  left: 0;
+  transition: all 1s;
+  gap: 25px;
+}
+.container {
+  display: flex;
+  width: 60%;
+  left: 18%;
+  overflow: hidden;
+  justify-self: unset;
+  left: 0;
+  right: 0;
+  margin-left: 20%;
+  flex-direction: column;
+  background: #26282a;
+  padding-top:2%;
+  padding-right:2.5%;
+  padding-left:2.5%;
+  padding-bottom: 3%;
+  border: 2px solid #6c92c7;
+}
+img {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1%;
+  margin-right: 4%;
+
+}
+.slider {
+  display: inline-block;
+}
+.favorites-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.item-pagination {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-back {
+  width: 16rem;
+  height: 16rem;
+  width: 40%;
+  height: 40%;
+  background: #6c92c7;
+  border-radius: 50%;
+}
+/* .button-back:hover {
+  background: #ffff;
+} */
+
+li {
+  list-style-type: none;
+  margin-top: 1%;
+}
+.lol{
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    margin-top: 1%;
+    
+}
+h2 {
+    font-weight: 300;
+    animation: backwards;
+    font-size: 20px;
+    webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.active {
+    background-color: rgb(37, 40, 42);
+    border: 2px solid #6c92c7
+}
+.active:hover{
+    background-color: rgb(37, 40, 42);
+    border: 2px solid  #ffff;
+}
+li:hover .button-back.active {
+    background-color: rgb(37, 40, 42);
+    background-color: rgb(37, 40, 42);
+    border: 2px solid  #ffff;
+}
+li:hover .button-back {
+    background: #ffff;
+    
+}
