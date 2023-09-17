@@ -1,5 +1,5 @@
-body{
-    background: #26282a;
+body {
+  background: #26282a;
 }
 .slider-line {
   display: flex;
@@ -15,9 +15,9 @@ body{
   margin-left: 20%;
   flex-direction: column;
   background: #26282a;
-  padding-top:2%;
-  padding-right:2.5%;
-  padding-left:2.5%;
+  padding-top: 2%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
   padding-bottom: 3%;
   border: 0.1rem solid #6c92c7;
 }
@@ -27,7 +27,6 @@ img {
   max-height: 100%;
   border-radius: 1%;
   margin-right: 4%;
-
 }
 .slider {
   display: inline-block;
@@ -58,119 +57,116 @@ li {
   list-style-type: none;
   margin-top: 1%;
 }
-.lol{
-    display: flex;
-    justify-content: space-between;
-    color: #ffff;
-    margin-top: 1%;
-    
+.lol {
+  display: flex;
+  justify-content: space-between;
+  color: #ffff;
+  margin-top: 1%;
 }
 h2 {
-    font-weight: 300;
-    animation: backwards;
-    font-size: 20px;
-    webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  font-weight: 300;
+  animation: backwards;
+  font-size: 20px;
+  webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .active {
-    background-color: rgb(37, 40, 42);
-    border: 2px solid #6c92c7
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #6c92c7;
 }
-.active:hover{
-    background-color: rgb(37, 40, 42);
-    border: 2px solid  #ffff;
+.active:hover {
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #ffff;
 }
 li:hover .button-back.active {
-    background-color: rgb(37, 40, 42);
-    background-color: rgb(37, 40, 42);
-    border: 2px solid  #ffff;
+  background-color: rgb(37, 40, 42);
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #ffff;
 }
 li:hover .button-back {
-    background: #ffff;
-    
+  background: #ffff;
 }
 li {
-    list-style-type: none;
-    margin-top: 1%;
+  list-style-type: none;
+  margin-top: 1%;
+}
+.lol {
+  display: flex;
+  justify-content: space-between;
+  color: #ffff;
+  margin-top: 1%;
+}
+h2 {
+  font-weight: 300;
+  animation: backwards;
+  font-size: 20px;
+  webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.active {
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #6c92c7;
+}
+.active:hover {
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #ffff;
+}
+li:hover .button-back.active {
+  background-color: rgb(37, 40, 42);
+  background-color: rgb(37, 40, 42);
+  border: 2px solid #ffff;
+}
+li:hover .button-back {
+  background: #ffff;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
-  .lol{
-      display: flex;
-      justify-content: space-between;
-      color: #ffff;
-      margin-top: 1%;
-      
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .lol {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .favorites-pagination {
+    padding: 0%;
   }
   h2 {
-      font-weight: 300;
-      animation: backwards;
-      font-size: 20px;
-      webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    margin-top: -1%;
+    align-self: flex-start;
   }
-  .active {
-      background-color: rgb(37, 40, 42);
-      border: 2px solid #6c92c7
-  }
-  .active:hover{
-      background-color: rgb(37, 40, 42);
-      border: 2px solid  #ffff;
-  }
-  li:hover .button-back.active {
-      background-color: rgb(37, 40, 42);
-      background-color: rgb(37, 40, 42);
-      border: 2px solid  #ffff;
-  }
-  li:hover .button-back {
-      background: #ffff;
-      
-  }
-  
-  
-  @-webkit-keyframes focus-in-contract-bck {
-      0% {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(300px);
-                transform: translateZ(300px);
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateZ(12px);
-                transform: translateZ(12px);
-        -webkit-filter: blur(0);
-                filter: blur(0);
-        opacity: 1;
-      }
-    }
-    @keyframes focus-in-contract-bck {
-      0% {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(300px);
-                transform: translateZ(300px);
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateZ(12px);
-                transform: translateZ(12px);
-        -webkit-filter: blur(0);
-                filter: blur(0);
-        opacity: 1;
-      }
-    }
-    @media (max-width: 768px) {
-          .lol{ 
-              flex-direction: column-reverse;
-              justify-content: space-around;
-              align-items: center;
-          }
-          .favorites-pagination{
-              padding: 0%;
-          }
-          h2{
-              margin-top: -1%;
-              align-self: flex-start;
-          }
-    }
+}
