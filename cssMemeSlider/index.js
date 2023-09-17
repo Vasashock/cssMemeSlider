@@ -17,13 +17,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let imgAlt = document.getElementsByClassName('image-abote').item(index);
         textH.innerText = imgAlt.alt;
         textH.style.animation = 'none';
-        textH.offsetHeight; /* trigger reflow */
+        textH.offsetHeight;
         textH.style.animation = null;
       });
     });
+    onresize = (event) => {
+        let sliderWidth = document.querySelector(".image-abote").offsetWidth  + getSize("container") - getSize("image-abote", 'marginRight') + 23;
+        rollSlider(sliderLine, 474, 0);
+        activeDot(0, pagination);
+        
+      };
     
-  
-  });
+    });
   
   function rollSlider(sliderLine, sliderWidth, sliderCount) {
     sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
