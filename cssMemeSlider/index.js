@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let imgAlt = document.getElementsByClassName('image-abote').item(index);
         textH.innerText = imgAlt.alt;
         textH.style.animation = 'none';
-        textH.offsetHeight;
+        textH.offsetHeight; 
         textH.style.animation = null;
       });
     });
